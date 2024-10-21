@@ -1,0 +1,4 @@
+Thank you T-622 for the awsome display library
+https://github.com/T-622/RPI-PICO-I2C-LCD
+
+thank you cole for being my partner and helping me make my idea a reality
