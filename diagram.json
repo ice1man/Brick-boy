@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "author": "ice cube labs",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 83,
+      "left": 240,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 131,
+      "left": 163.2,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 25.4,
+      "left": 163.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": 83,
+      "left": 96,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -156.8,
+      "left": -4,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP14", "btn2:1.l", "cyan", [ "h-25.2", "v35.25", "h182.4" ] ],
+    [ "pico:GP15", "btn1:1.r", "green", [ "h-34.8", "v35.25", "h345.6" ] ],
+    [ "pico:GP13", "btn3:1.r", "magenta", [ "h-44.4", "v73.65", "h364.8", "v-201.6" ] ],
+    [ "pico:GP12", "btn4:1.l", "yellow", [ "h-54", "v92.85", "h384", "v-220.8", "h-240" ] ],
+    [ "pico:3V3", "lcd1:VCC", "green", [ "h14.4", "v-60.75", "h-105.6", "v-105.6" ] ],
+    [ "pico:GND.1", "lcd1:GND", "black", [ "h-34.8", "v-156.75" ] ],
+    [
+      "pico:GP18",
+      "lcd1:SDA",
+      "violet",
+      [ "h72", "v44.85", "h211.2", "v-384", "h-403.2", "v67.2" ]
+    ],
+    [
+      "pico:GP19",
+      "lcd1:SCL",
+      "green",
+      [ "h62.4", "v35.25", "h249.6", "v-384", "h-441.6", "v96" ]
+    ],
+    [ "pico:3V3", "btn3:2.l", "red", [ "h62.4", "v6.45", "h28.8" ] ],
+    [ "btn3:2.l", "btn4:2.r", "red", [ "h28.8", "v48.2" ] ],
+    [ "btn4:2.r", "btn1:2.l", "red", [ "h0" ] ],
+    [ "btn1:2.l", "btn2:2.r", "red", [ "h0", "v48.2" ] ]
+  ],
+  "dependencies": {}
+}
