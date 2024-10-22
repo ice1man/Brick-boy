@@ -41,9 +41,8 @@ def pick(items):
         display_text.clear()
         display_text.move_to(0,0)
         display_text.putstr(items[t])
-        if t != (len(items)):
-            display_text.move_to(1,1)
-            display_text.putstr(items[t+1])
+        display_text.move_to(1,1)
+        display_text.putstr(items[t+1])
         move = key_input()
         if move == 'A':
             return(t)
