@@ -1,12 +1,7 @@
 import machine
-from machine import I2C
+from machine import I2C, PWM, Pin
 from lcd_api import LcdApi
 from pico_i2c_lcd import I2cLcd
-import random
-from machine import PWM, Pin
-import time
-
-
 
 I2C_ADDR = 0x27
 I2C_NUM_ROWS = 2
