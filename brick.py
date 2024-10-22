@@ -33,3 +33,26 @@ def key_input():
         if button_d.value() == 1:
             return("D")
             break
+
+def pick(items):
+    t = 0
+    items.append("End")
+    while True:
+        display_text.clear()
+        display_text.move_to(0,0)
+        display_text.putstr(items[t])
+        if t != (len(items)):
+            display_text.move_to(1,1)
+            display_text.putstr(items[t+1])
+        move = key_input()
+        if move == 'A':
+            return(t)
+        elif move == 'D':
+            return("BACK")
+            break
+        elif move == 'B' and t < (len(items)-2):
+            t += 1
+            continue
+        elif move == 'C' and t > 0:
+            t -= 1
+            continue
