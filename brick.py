@@ -13,10 +13,10 @@ BUTTON_B_PIN = 14
 BUTTON_C_PIN = 13
 BUTTON_D_PIN = 12
 
-button_a = Pin(BUTTON_A_PIN, machine.Pin.IN, machine.Pin.PULL_DOWN)
-button_b = Pin(BUTTON_B_PIN, machine.Pin.IN, machine.Pin.PULL_DOWN)
-button_c = Pin(BUTTON_C_PIN, machine.Pin.IN, machine.Pin.PULL_DOWN)
-button_d = Pin(BUTTON_D_PIN, machine.Pin.IN, machine.Pin.PULL_DOWN)
+button_a = Pin(BUTTON_A_PIN, Pin.IN, Pin.PULL_DOWN)
+button_b = Pin(BUTTON_B_PIN, Pin.IN, Pin.PULL_DOWN)
+button_c = Pin(BUTTON_C_PIN, Pin.IN, Pin.PULL_DOWN)
+button_d = Pin(BUTTON_D_PIN, Pin.IN, Pin.PULL_DOWN)
 
 def key_input():
     while True:
