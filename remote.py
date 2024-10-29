@@ -9,4 +9,4 @@ def main():
         action = brick.pick(["reboot","menu","play_pause","up","down","left","right","center"])
         #if action == 0:
           
-  elif doing == 1:
+  #elif doing == 1:
