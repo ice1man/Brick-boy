@@ -26,7 +26,13 @@ def main():
       brick.display_text.putstr("win")
     if com == 1:
       brick.display_text.putstr("you lose")
-  brick.
-
-brick.display_text.putstr("welcome to the")
-brick.display_text.move_to(0,1)
+  brick.key_input()
+  sleep(2)
+  brick.display_text.clear()
+  brick.display_text.putstr("do you want to play again")
+  sleep(2)  
+  if brick.pick(["yes","no"]) == 0:
+    brick.display_text.clear()
+    main()
+  else:
+    break
