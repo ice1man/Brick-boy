@@ -1,27 +1,32 @@
 import brick
 import random
+from time import sleep
 
 def main():
   choice = brick.pick(["rock","paper","scissors"])
   com = random.randint(0,2)
   if choice == 0:
     if com == 0:
-      print("tie")
+      brick.display_text.putstr("tie")
     if com == 1:
-      print("win")
+      brick.display_text.putstr("win")
     if com == 2:
-      print("you lose")
+      brick.display_text.putstr("you lose")
   if choice == 1:
     if com == 1:
-      print("tie")
+      brick.display_text.putstr("tie")
     if com == 2:
-      print("win")
+      brick.display_text.putstr("win")
     if com == 0:
-      print("you lose")
+      brick.display_text.putstr("you lose")
   if choice == 2:
     if com == 2:
-      print("tie")
+      brick.display_text.putstr("tie")
     if com == 0:
-      print("win")
+      brick.display_text.putstr("win")
     if com == 1:
-      print("you lose")
+      brick.display_text.putstr("you lose")
+  brick.
+
+brick.display_text.putstr("welcome to the")
+brick.display_text.move_to(0,1)
