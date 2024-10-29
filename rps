@@ -6,3 +6,22 @@ def main():
   com = random.randint(0,2)
   if choice == 0:
     if com == 0:
+      print("tie")
+    if com == 1:
+      print("win")
+    if com == 2:
+      print("you lose")
+  if choice == 1:
+    if com == 1:
+      print("tie")
+    if com == 2:
+      print("win")
+    if com == 0:
+      print("you lose")
+  if choice == 2:
+    if com == 2:
+      print("tie")
+    if com == 0:
+      print("win")
+    if com == 1:
+      print("you lose")
