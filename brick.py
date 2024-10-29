@@ -44,9 +44,13 @@ def pick(items):
         display_text.putstr(items[t+1])
         move = key_input()
         if move == 'A':
+            display_text.clear()
+            display_text.move_to(0,0)
             return(t)
         elif move == 'D':
             return("BACK")
+            display_text.clear()
+            display_text.move_to(0,0)
             break
         elif move == 'B' and t < (len(items)-2):
             t += 1
