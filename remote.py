@@ -7,6 +7,6 @@ def main():
       device = brick.pick(["apple tv","infocus","nec","samsung"])
       if device == 0:
         action = brick.pick(["reboot","menu","play_pause","up","down","left","right","center"])
-        if action == 0:
+        #if action == 0:
           
   elif doing == 1:
