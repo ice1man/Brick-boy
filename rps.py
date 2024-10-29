@@ -35,4 +35,5 @@ def main():
     brick.display_text.clear()
     main()
   else:
-    break
+    brick.display_text.clear()
+    brick.display_text.putstr("bye")
