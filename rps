@@ -1,1 +1,8 @@
 import brick
+import random
+
+def main():
+  choice = brick.pick(["rock","paper","scissors"])
+  com = random.randint(0,2)
+  if choice == 0:
+    if com == 0:
